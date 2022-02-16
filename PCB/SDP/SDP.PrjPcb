@@ -64,7 +64,7 @@ GenerateClassCluster=0
 DocumentUniqueId=KUAYYWNC
 
 [Document2]
-DocumentPath=PCB1.PcbDoc
+DocumentPath=PCB2.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -78,7 +78,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=RIALUISE
+DocumentUniqueId=SVMMYYUH
 
 [Configuration1]
 Name=Sources
