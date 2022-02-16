@@ -47,7 +47,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=..\..\..\..\..\Downloads\BLE112-A-V1C\BLE112-A-V1C.SchLib
+DocumentPath=BLE112-A-V1C.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -64,7 +64,7 @@ GenerateClassCluster=0
 DocumentUniqueId=FSINMGZU
 
 [Document2]
-DocumentPath=..\..\..\..\..\Downloads\BLE112-A-V1C\BLUEGIGA_BLE112-A.PcbLib
+DocumentPath=BLUEGIGA_BLE112-A.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -81,7 +81,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [SearchPath1]
-Path=C:\Users\Ryan\Downloads\BLE112-A-V1C\*.*
+Path=C:\Users\Ryan\Documents\GitHub\SDP\PCB\SDP\BLE112-A-V1C\*.*
 IncludeSubFolders=1
 
 [OutputGroup1]
