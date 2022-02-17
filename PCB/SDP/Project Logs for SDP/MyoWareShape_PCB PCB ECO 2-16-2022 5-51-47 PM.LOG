@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=NetC?_2 Pin=C?-2
+Added Pin To Net: NetName=NetC?_2 Pin=U2-20
+Added Net: Name=NetC?_2
+Added Member To Class: ClassName=Sheet1 Member=Component C? GRM155R71C104KA88D

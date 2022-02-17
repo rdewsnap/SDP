@@ -1,0 +1,9 @@
+Update Managed Component C2 From CMP-2008-02081-2[1uF] To CMP-2008-02081-2[C0402C105K8PACTU] in Sheet1.SchDoc
+Replace Part P1 Header 3X2 in C:\Users\Ryan\Desktop\SDP\PCB design\Sheet1.SchDoc with Header 3X2 from Miscellaneous Connectors.IntLib
+Replace Part P2 Header 3 in C:\Users\Ryan\Desktop\SDP\PCB design\Sheet1.SchDoc with Header 3 from Miscellaneous Connectors.IntLib
+Replace Part P3 Header 4 in C:\Users\Ryan\Desktop\SDP\PCB design\Sheet1.SchDoc with Header 4 from Miscellaneous Connectors.IntLib
+Replace Part P4 Header 4X2 in C:\Users\Ryan\Desktop\SDP\PCB design\Sheet1.SchDoc with Header 4X2 from Miscellaneous Connectors.IntLib
+Replace Part Q1 IGBT-N in C:\Users\Ryan\Desktop\SDP\PCB design\Sheet1.SchDoc with IGBT-N from Miscellaneous Devices.IntLib
+Update Managed Component U1 From CMP-0003-02167-1[ADS7924IRTER] To CMP-0003-02167-1[ADS7924IRTER] in Sheet1.SchDoc
+Update Managed Component U2 From CMP-2000-07439-1[ATMEGA328PB-AU] To CMP-2000-07439-1[ATMEGA328PB-AU] in Sheet1.SchDoc
+Replace Part U3 BLE112-A-V1C in C:\Users\Ryan\Desktop\SDP\PCB design\Sheet1.SchDoc with BLE112-A-V1C from BLE112-A-V1C.IntLib
