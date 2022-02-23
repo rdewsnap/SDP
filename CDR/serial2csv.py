@@ -21,7 +21,7 @@ port = input(
  
 port = 'COM'+port
  
-ser = serial.Serial(port, 115200, timeout=10)
+ser = serial.Serial(port, 9600, timeout=10) ##(port, 115200, timeout=10)
  
 os.system('cls')
 
@@ -30,3 +30,5 @@ f = open('data.csv', 'a')
 while True:
         print(ser.readline().decode().strip('\n'))
         f.write(ser.readline().decode().strip('\n'))
+		
+
