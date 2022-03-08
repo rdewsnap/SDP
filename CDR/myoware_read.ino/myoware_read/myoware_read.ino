@@ -2,8 +2,8 @@
 
 // This program sends analog values A0, A1, A2, A3 from Arduino via serial line delimited with ", "
 
-#define sensor1 A0  
-#define sensor2 A1  
+#define sensor1 A5  
+#define sensor2 A4  
 #define sensor3 A2  
 #define sensor4 A3  
 
@@ -26,14 +26,14 @@ void loop()
 {
   val1 = analogRead(sensor1);    
   val2 = analogRead(sensor2);
-  val3 = analogRead(sensor3);
-  val4 = analogRead(sensor4);   
+  //val3 = analogRead(sensor3);
+  //val4 = analogRead(sensor4);   
 
   Serial.print(val1);
-/*  Serial.print(", ");
-  Serial.print(val2);
   Serial.print(", ");
-  Serial.print(val3);*/
+  Serial.println(val2);
+  /*Serial.print(", ");
+  Serial.print(val3);
   Serial.print(", ");
-  Serial.println(val4);
+  Serial.println(val4);*/
 }

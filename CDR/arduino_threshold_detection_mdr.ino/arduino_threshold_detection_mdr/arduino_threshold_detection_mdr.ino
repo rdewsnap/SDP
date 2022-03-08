@@ -1,5 +1,5 @@
 #define sensor1 A0  // thumb 
-#define sensor2 A5  // ring
+#define sensor2 A3  // ring
 
 #define thumb 6
 #define ring 5
