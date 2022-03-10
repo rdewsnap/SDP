@@ -30,5 +30,3 @@ f = open('data.csv', 'a')
 while True:
         print(ser.readline().decode().strip('\n'))
         f.write(ser.readline().decode().strip('\n'))
-		
-

@@ -4,8 +4,8 @@
 
 #define sensor1 A5  
 #define sensor2 A4  
-#define sensor3 A2  
-#define sensor4 A3  
+#define sensor3 A3  
+#define sensor4 A2  
 
 #define LED 8
 
@@ -26,14 +26,14 @@ void loop()
 {
   val1 = analogRead(sensor1);    
   val2 = analogRead(sensor2);
-  //val3 = analogRead(sensor3);
+  val3 = analogRead(sensor3);
   //val4 = analogRead(sensor4);   
 
   Serial.print(val1);
   Serial.print(", ");
-  Serial.println(val2);
-  /*Serial.print(", ");
-  Serial.print(val3);
+  Serial.print(val2);
   Serial.print(", ");
+  Serial.println(val3);
+  /*Serial.print(", ");
   Serial.println(val4);*/
 }
