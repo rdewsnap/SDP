@@ -27,6 +27,6 @@ os.system('cls')
 #f = open('data.csv', 'a')
  
 while True:
-        x = ser.readline().decode('utf-8', 'ignore').strip('\n')
+        x = ser.readline()#.decode('utf-8', 'ignore').strip('\n')
         print(x)
         #f.write(x)
