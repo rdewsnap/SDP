@@ -1,0 +1,184 @@
+
+GccBoardProject1_1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000138  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000000e4  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000138  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000168  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000040  00000000  00000000  000001a8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000c08  00000000  00000000  000001e8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000a1f  00000000  00000000  00000df0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000a7f  00000000  00000000  0000180f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000048  00000000  00000000  00002290  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00011501  00000000  00000000  000022d8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000050  00000000  00000000  000137d9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000020  00000000  00000000  00013829  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_macro  00003e8c  00000000  00000000  00013849  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	59 c0       	rjmp	.+178    	; 0xb4 <__ctors_end>
+   2:	00 00       	nop
+   4:	5f c0       	rjmp	.+190    	; 0xc4 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5d c0       	rjmp	.+186    	; 0xc4 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5b c0       	rjmp	.+182    	; 0xc4 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	59 c0       	rjmp	.+178    	; 0xc4 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	57 c0       	rjmp	.+174    	; 0xc4 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	55 c0       	rjmp	.+170    	; 0xc4 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	53 c0       	rjmp	.+166    	; 0xc4 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	51 c0       	rjmp	.+162    	; 0xc4 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	4f c0       	rjmp	.+158    	; 0xc4 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4d c0       	rjmp	.+154    	; 0xc4 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4b c0       	rjmp	.+150    	; 0xc4 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	49 c0       	rjmp	.+146    	; 0xc4 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	47 c0       	rjmp	.+142    	; 0xc4 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	45 c0       	rjmp	.+138    	; 0xc4 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	43 c0       	rjmp	.+134    	; 0xc4 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	41 c0       	rjmp	.+130    	; 0xc4 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	3f c0       	rjmp	.+126    	; 0xc4 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3d c0       	rjmp	.+122    	; 0xc4 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3b c0       	rjmp	.+118    	; 0xc4 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	39 c0       	rjmp	.+114    	; 0xc4 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	37 c0       	rjmp	.+110    	; 0xc4 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	35 c0       	rjmp	.+106    	; 0xc4 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	33 c0       	rjmp	.+102    	; 0xc4 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	31 c0       	rjmp	.+98     	; 0xc4 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	2f c0       	rjmp	.+94     	; 0xc4 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2d c0       	rjmp	.+90     	; 0xc4 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2b c0       	rjmp	.+86     	; 0xc4 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	29 c0       	rjmp	.+82     	; 0xc4 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	27 c0       	rjmp	.+78     	; 0xc4 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	25 c0       	rjmp	.+74     	; 0xc4 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	23 c0       	rjmp	.+70     	; 0xc4 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	21 c0       	rjmp	.+66     	; 0xc4 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	1f c0       	rjmp	.+62     	; 0xc4 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1d c0       	rjmp	.+58     	; 0xc4 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	1b c0       	rjmp	.+54     	; 0xc4 <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	19 c0       	rjmp	.+50     	; 0xc4 <__bad_interrupt>
+  92:	00 00       	nop
+  94:	17 c0       	rjmp	.+46     	; 0xc4 <__bad_interrupt>
+  96:	00 00       	nop
+  98:	15 c0       	rjmp	.+42     	; 0xc4 <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	13 c0       	rjmp	.+38     	; 0xc4 <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	11 c0       	rjmp	.+34     	; 0xc4 <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	0f c0       	rjmp	.+30     	; 0xc4 <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	0d c0       	rjmp	.+26     	; 0xc4 <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	0b c0       	rjmp	.+22     	; 0xc4 <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	09 c0       	rjmp	.+18     	; 0xc4 <__bad_interrupt>
+	...
+
+000000b4 <__ctors_end>:
+  b4:	11 24       	eor	r1, r1
+  b6:	1f be       	out	0x3f, r1	; 63
+  b8:	cf ef       	ldi	r28, 0xFF	; 255
+  ba:	d8 e0       	ldi	r29, 0x08	; 8
+  bc:	de bf       	out	0x3e, r29	; 62
+  be:	cd bf       	out	0x3d, r28	; 61
+  c0:	0b d0       	rcall	.+22     	; 0xd8 <main>
+  c2:	0e c0       	rjmp	.+28     	; 0xe0 <_exit>
+
+000000c4 <__bad_interrupt>:
+  c4:	9d cf       	rjmp	.-198    	; 0x0 <__vectors>
+
+000000c6 <board_init>:
+		port_pin_flags_t flags)
+{
+	/* Select direction and initial pin state */
+	if (flags & IOPORT_DIR_OUTPUT) {
+		if (flags & IOPORT_INIT_HIGH) {
+			*((uint8_t *)port + 2) |= pin_mask;
+  c6:	95 b1       	in	r25, 0x05	; 5
+			*((uint8_t *)port + 2) &= ~pin_mask;
+		}
+
+		*((uint8_t *)port + 1) |= pin_mask;
+	} else {
+		*((uint8_t *)port + 1) &= ~pin_mask;
+  c8:	84 b1       	in	r24, 0x04	; 4
+  ca:	80 62       	ori	r24, 0x20	; 32
+  cc:	8f 77       	andi	r24, 0x7F	; 127
+  ce:	84 b9       	out	0x04, r24	; 4
+		if (flags & IOPORT_PULL_UP) {
+			*((uint8_t *)port + 2) |= pin_mask;
+  d0:	89 2f       	mov	r24, r25
+  d2:	80 6a       	ori	r24, 0xA0	; 160
+  d4:	85 b9       	out	0x05, r24	; 5
+  d6:	08 95       	ret
+
+000000d8 <main>:
+
+int main (void)
+{
+	/* Insert system clock initialization code here (sysclk_init()). */
+
+	board_init();
+  d8:	f6 df       	rcall	.-20     	; 0xc6 <board_init>
+
+	/* Insert application code here, after the board has been initialized. */
+}
+  da:	80 e0       	ldi	r24, 0x00	; 0
+  dc:	90 e0       	ldi	r25, 0x00	; 0
+  de:	08 95       	ret
+
+000000e0 <_exit>:
+  e0:	f8 94       	cli
+
+000000e2 <__stop_program>:
+  e2:	ff cf       	rjmp	.-2      	; 0xe2 <__stop_program>

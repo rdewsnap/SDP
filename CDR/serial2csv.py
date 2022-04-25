@@ -28,5 +28,6 @@ os.system('cls')
 f = open('data.csv', 'a')
  
 while True:
-        print(ser.readline().decode().strip('\n'))
-        f.write(ser.readline().decode().strip('\n'))
+    value = ser.readline().decode('utf-8', 'ignore')
+    print(value)
+    f.write(value)
