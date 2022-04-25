@@ -1,0 +1,14 @@
+Change Component Designator: OldDesignator=P? NewDesignator=P1
+Change Component Designator: OldDesignator=P? NewDesignator=P2
+Change Component Designator: OldDesignator=P? NewDesignator=P3
+Change Component Designator: OldDesignator=P? NewDesignator=P4
+Change Component Designator: OldDesignator=P? NewDesignator=P5
+Change Component Designator: OldDesignator=R? NewDesignator=R2
+Change Component Designator: OldDesignator=R? NewDesignator=R3
+Change Component Designator: OldDesignator=U? NewDesignator=U2
+Change Net Name : Old Net Name=NetP?_4 New Net Name=NetP2_4
+Added Member To Class: ClassName=Sheet1 Member=Component P1 ISP Header
+Added Member To Class: ClassName=Sheet1 Member=Component P3 Header 4
+Added Member To Class: ClassName=Sheet1 Member=Component P4 Header 4X2
+Added Member To Class: ClassName=Sheet1 Member=Component P5 61300611121
+Added Member To Class: ClassName=Sheet1 Member=Component R2 Res1

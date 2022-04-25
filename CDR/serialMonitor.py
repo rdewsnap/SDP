@@ -24,9 +24,9 @@ port = 'COM'+port
 ser = serial.Serial(port, 9600, timeout=10, stopbits=2) ##(port, 115200, timeout=10)
 os.system('cls')
 
-f = open('data.csv', 'a')
+#f = open('data.csv', 'a')
  
 while True:
         x = ser.readline().decode('utf-8', 'ignore').strip('\n')
         print(x)
-        f.write(x)
+        #f.write(x)

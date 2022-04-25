@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\Ryan\Documents\GitHub\SDP\PCB\CDR_REAL\EMG_interface.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=emg_interface-roundholes.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=emg_interface-slotholes.txt|DrillLayers=gtl,gbl

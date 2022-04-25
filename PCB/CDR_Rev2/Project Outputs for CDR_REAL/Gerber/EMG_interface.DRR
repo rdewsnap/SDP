@@ -1,0 +1,21 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: EMG_interface.PcbDoc   3/25/2022  3:31:42 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : EMG_interface-RoundHoles.TXT
+ASCII SlotHoles File : EMG_interface-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      12mil (0.305mm)                                           Round             3         PTH        0.39inch (10.00mm)
+T2      24mil (0.6mm)                                             Slot              2         PTH        0.61inch (15.43mm)
+T3      28mil (0.7mm)                                             Round             2         PTH        0.12inch (3.10mm)
+T4      30mil (0.762mm)                                           Round             2         PTH        0.20inch (5.00mm)
+T5      35mil (0.889mm)                                           Round             18        PTH        3.12inch (79.36mm)
+T6      35mil (0.9mm)                                             Round             40        PTH        7.44inch (188.87mm)
+T7      43mil (1.1mm)                                             Round             2         PTH        0.20inch (5.08mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              69
+
+Total Processing Time (hh:mm:ss) : 00:00:00
