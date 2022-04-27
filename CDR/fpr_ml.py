@@ -55,6 +55,7 @@ counter_pred = 0
 
 prev = ['none']
 while True:
+    #hi
     dat = ser.readline().decode('utf-8', 'ignore').strip('\r\n').split(",")
     temp = [int(num.lstrip()) for num in dat]
     try:
