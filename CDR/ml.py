@@ -9,7 +9,7 @@ import pickle
 import serial
 import os
 
-def train_model(myoware_inputs=3, neighbors=21, training_path=r"C:\Users\Ryan\Documents\GitHub\SDP\CDR\CDR_official_test\rms_3_gestures.CSV"):
+def train_model(myoware_inputs=2, neighbors=21, training_path=r"C:\Users\sdp\Desktop\GitHub\SDP\CDR\wombocombo.CSV"):
 
     names = ['class'] * (myoware_inputs + 1)
     for i in range(0, myoware_inputs):
@@ -32,17 +32,17 @@ def train_model(myoware_inputs=3, neighbors=21, training_path=r"C:\Users\Ryan\Do
 
     # filename for trained model saved as a pickle for future use
     filename = 'trained_model.sav'
-    pickle.dumps(classifier, open(filename, 'wb'))
+    pickle.dump(classifier, open(filename, 'wb'))
 
 
-def run_model_live_inputs(port='COM7', scale_type='standard', model_name='trained_model.sav'):
+def run_model_live_inputs(port='COM12', scale_type='standard', model_name='trained_model.sav'):
 
     if scale_type == 'standard':
         scale = StandardScaler()
     else:
         raise ValueError("Scaler should be the same as trained model")
 
-    classifier = pickle.load(open(model_name), 'rb')
+    classifier = pickle.load(open(model_name, 'rb'))
 
     ser = serial.Serial(port, 9600, timeout=10)  # (port, 115200, timeout=10)
     os.system('cls')
@@ -51,29 +51,30 @@ def run_model_live_inputs(port='COM7', scale_type='standard', model_name='traine
 
     x = [None] * 20
     y = [None] * 20
-    z = [None] * 20
 
     counter = 0
 
     while True:
-        dat = ser.readline().decode('utf-8', 'ignore').strip('\r\n').split(", ")
-        temp = [int(num.lstrip()) for num in dat]
-        x[counter] = temp[0]
-        y[counter] = temp[1]
-        z[counter] = temp[2]
-        counter += 1
-        if counter == 20:
-            rms_input1 = np.sqrt(sum(map(lambda i: i * i, x)) / 20)
-            rms_input2 = np.sqrt(sum(map(lambda i: i * i, y)) / 20)
-            rms_input3 = np.sqrt(sum(map(lambda i: i * i, z)) / 20)
-            rms_final = np.array([rms_input1, rms_input2, rms_input3]).reshape(1, -1)
-            rms_final = scale.transform(rms_final)
-            y_pred = classifier.predict(rms_final)
-            if y_pred != prev:
-                print(y_pred)
-            prev = y_pred
+        dat = ser.readline().decode('utf-8', 'ignore').strip('\r\n').split(",")
 
-            counter = 0
-            x = [None] * 20
-            y = [None] * 20
-            z = [None] * 20
+        if len(dat[0]) == 4:
+            temp = [int(num.lstrip()) for num in dat]
+            x[counter] = temp[0]
+            y[counter] = temp[1]
+            counter += 1
+            if counter == 20:
+                rms_input1 = np.sqrt(sum(map(lambda i: i * i, x)) / 20)
+                rms_input2 = np.sqrt(sum(map(lambda i: i * i, y)) / 20)
+                rms_final = np.array([rms_input1, rms_input2]).reshape(1, -1)
+                rms_fin = scale.transform(rms_final)
+                y_pred = classifier.predict(rms_fin)
+                print(y_pred)
+                if y_pred != prev:
+                    print(y_pred)
+                prev = y_pred
+
+                counter = 0
+                x = [None] * 20
+                y = [None] * 20
+
+run_model_live_inputs()
